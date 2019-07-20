@@ -48,6 +48,7 @@ class credentials:
      @classmethod
      def find_by_name(cls,name):
         """
+        cls refers to the entire class
         find_by_name loops through names to check for the name passed if true it returns the name
         introduction of decorator for simple modification
         method that takes a name of an account and returns the account object
