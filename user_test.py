@@ -29,7 +29,8 @@ class TestUser(unittest.TestCase):
         """
         So by defining the condition if __name__ == '__main__': 
         we are confirming that anything inside the if block should run 
-        
+        unittest.main() provides a command line interface that
+         collects all the tests methods and executes them.
         """
 if __name__ == '__main__':
     unittest.main()               
