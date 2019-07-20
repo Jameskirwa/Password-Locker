@@ -11,3 +11,11 @@ class TestUser(unittest.TestCase):
         Setup method that defines instructions
         """
         self.new_user = user("James","Kirwa","Uppercase95")
+
+    def test_init(self):
+        """
+        Test for correct initialization
+        """
+        self.assertEqual(self.new_user.first_name,"James")
+        self.assertEqual(self.new_user.last_name,"Kirwa")
+        self.assertEqual(self.new_user.password,"Uppercase95")    
