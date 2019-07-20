@@ -63,8 +63,15 @@ class credentials:
         Function to generate password
         """
         chars = string.ascii_uppercase + string.ascii_lowercase + string.digits
-        size = 8
-        return ''.join(random.choice(chars) for x in range(size,20))
+        size = 10
+        return ''.join(random.choice(chars) for x in range(size,18))
+
+     @classmethod
+     def display_credentials(cls):
+        """
+        Function to display accounts and their credentials
+        """
+        return cls.credentials_list   
            
 
           
