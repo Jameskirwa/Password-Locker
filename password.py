@@ -48,7 +48,9 @@ class credentials:
      @classmethod
      def find_by_name(cls,name):
         """
-        Function that takes a the name of an account and returns the account object
+        find_by_name loops through names to check for the name passed if true it returns the name
+        introduction of decorator for simple modification
+        method that takes a name of an account and returns the account object
         """
         for account in cls.credentials_list:
             if account.account_name == name:
