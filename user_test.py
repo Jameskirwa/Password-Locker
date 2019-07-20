@@ -25,4 +25,11 @@ class TestUser(unittest.TestCase):
         Test to check whether app saves user login details
         """
         self.new_user.save_user()
-        self.assertEqual(len(user.user_list),1)       
+        self.assertEqual(len(user.user_list),1)
+        """
+        So by defining the condition if __name__ == '__main__': 
+        we are confirming that anything inside the if block should run 
+        
+        """
+if __name__ == '__main__':
+    unittest.main()               
