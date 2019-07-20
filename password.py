@@ -57,6 +57,16 @@ class credentials:
             if account.account_name == name:
                 return account 
 
+     @classmethod
+     def generate_password(stringLength = 12):
+        """
+        Function to generate password
+        """
+        chars = string.ascii_uppercase + string.ascii_lowercase + string.digits
+        size = 8
+        return ''.join(random.choice(chars) for x in range(size,20))
+           
+
           
 
       
