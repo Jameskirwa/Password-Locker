@@ -43,4 +43,26 @@ class TestCredentials(unittest.TestCase):
         self.assertEqual(len(credentials.credentials_list),2)
 
 
+    def test_view_credentials(self):
+        """
+        Test to view an account credential
+        """
+        self.assertEqual(credentials.display_credentials(),credentials.credentials_list)
+
+    def test_delete_credentials(self):
+        """
+        Test to delete account credentials
+        """
+        self.new_credentials.save_credentials()
+        test_credentials = credentials("Sololearn","Psychocoder","iknowhtml")
+        test_credentials.save_credentials()
+        self.new_credentials.delete_credentials()
+        self.assertEqual(len(credentials.credentials_list),1)
+
+
+if __name__ == '__main__':
+    unittest.main()
+
+
+
     
