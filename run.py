@@ -25,7 +25,15 @@ def save_credential(account):
     """
     Function to save account credentials details
     """
-    account.save_credentials()     
+    account.save_credentials()
+
+
+def generate_password():
+    """
+    Function to create a password automatically
+    """
+    password = credentials.generate_password()
+    return password         
 
 
 
