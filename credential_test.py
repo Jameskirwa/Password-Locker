@@ -11,4 +11,11 @@ class TestCredentials(unittest.TestCase):
         """
         self.new_credentials = credentials("Github","Jameskirwa","Uppercase95")
 
+
+    def tearDown(self):
+        """
+        Method that cleans up after each test
+        """
+        credentials.credentials_list = []
+
     
