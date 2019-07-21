@@ -18,4 +18,12 @@ class TestCredentials(unittest.TestCase):
         """
         credentials.credentials_list = []
 
+    def test_init(self):
+        """
+        Test for correct initialization
+        """
+        self.assertEqual(self.new_credentials.account_name,"Github")
+        self.assertEqual(self.new_credentials.username,"Jameskirwa")
+        self.assertEqual(self.new_credentials.password,"Uppercase95")
+
     
