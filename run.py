@@ -33,7 +33,13 @@ def generate_password():
     Function to create a password automatically
     """
     password = credentials.generate_password()
-    return password         
+    return password  
+
+def display_credentials():
+    """
+    Function to display account and credentials
+    """
+    return credentials.display_credentials()
 
 
 
