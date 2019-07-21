@@ -51,7 +51,8 @@ def main():
     # print("Welcome to password locker :)")
     # print("What\'s your name?")
     # name = input()
-
+    # I then use a series of if-elif-else statements to check user input 
+    # and call the functions we have just defined depending on the user's choice.
     while True:
 
         print(f"Hello.Please use the short codes :li to create your password locker account :ex - To exit the application")
@@ -109,8 +110,7 @@ def main():
 
                     save_credential(add_account(accname,username,password))
                     print('\n')
-                    print(f"New account \'{accname}\' created")
-                        
+                    print(f"New account \'{accname}\' created")        
 
                 elif shorter_code == 'da':
                     if display_credentials():
