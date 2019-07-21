@@ -17,6 +17,15 @@ def add_account(accname,username,password):
 
 def save_user(user):
     """
-    Function to save user login details
+    Function to save login details for the user
     """
-    user.save_user()    
+    user.save_user() 
+
+def save_credential(account):
+    """
+    Function to save account credentials details
+    """
+    account.save_credentials()     
+
+
+
