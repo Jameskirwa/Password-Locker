@@ -29,11 +29,11 @@ Link to the live site [pip](https://github.com/Jameskirwa/Password-Locker) to pa
 
 ## Running the Application
 
-To run the application, in your terminal: $ chmod +x run.py $ ./run.py
+To run the application, in your terminal: $ chmod +x run.py $ run.py
 
 ## Testing the Application
 
-To run the tests for the class file: $ python3.6 test_locker.py
+To run the tests for the class file: $ python3.6 user_test.py
 
 ## Technologies Used
 
